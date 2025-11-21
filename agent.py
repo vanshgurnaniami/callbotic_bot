@@ -8,8 +8,8 @@ app = FastAPI()
 # ============================================================
 # 1. Path to your bot script and Python virtual environment
 # ============================================================
-BOT_FILE = "/home/test/Desktop/call/main.py"
-VENV_PYTHON = "/home/test/Desktop/call/venv/bin/python"
+BOT_FILE = "/home/test/Desktop/callbotic_bot/main.py"
+VENV_PYTHON = "/home/test/Desktop/callbotic_bot/venv/bin/python"
 
 
 # ============================================================
