@@ -42,7 +42,8 @@ def select_agent(page, agent_value):
 def go_to_create_campaign(page, campaign_name, org_name, agent_value, excel_path):
     print(f"🚀 Creating campaign: {campaign_name}")
 
-    page.goto("https://fe.callbotics.ai/content/create_campaign")
+    # page.goto("https://fe.callbotics.ai/content/create_campaign")
+    page.click("h6.sidebar-menu-item:text('Create Campaign')")
     page.wait_for_load_state("networkidle")
 
     page.locator("#campaignName").type(campaign_name)
