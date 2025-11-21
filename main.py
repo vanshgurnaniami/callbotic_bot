@@ -82,7 +82,7 @@ def go_to_create_campaign(page, campaign_name, org_name, agent_value, excel_path
 
 def run_campaign_creator(org_name, agent_value, excel_path):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         context = browser.new_context()
         page = context.new_page()
 
